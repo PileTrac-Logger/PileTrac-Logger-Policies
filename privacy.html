@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for the Pile Stroke Log mobile application. Respecting your privacy: fully offline audio analysis, zero data collection, and zero tracking.">
+    <title>Pile Stroke Log - Privacy Policy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Modern CSS Reset & Core Tokens */
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --accent-primary: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Header Section */
+        header {
+            position: relative;
+            padding: 5rem 1.5rem 3rem;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(120deg, #ffffff, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Container & Cards Layout */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 6rem;
+        }
+
+        /* Quick Facts Panel */
+        .quick-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .fact-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform var(--transition-speed), border-color var(--transition-speed);
+        }
+
+        .fact-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .fact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            display: inline-block;
+        }
+
+        .fact-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .fact-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Policy Section Content */
+        .section-block {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: #ffffff;
+            border-left: 4px solid var(--accent-primary);
+            padding-left: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.25rem;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+            border: 1px dashed rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #a5b4fc;
+        }
+
+        /* Action Buttons */
+        .actions-panel {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-muted);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background-color: #080c14;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 12pt;
+            }
+            header {
+                background: none;
+                border-bottom: 2px solid #000000;
+                padding-top: 1rem;
+            }
+            h1 {
+                background: none;
+                -webkit-text-fill-color: initial;
+                color: #000000;
+            }
+            .subtitle {
+                color: #555555;
+            }
+            .quick-facts, .actions-panel {
+                display: none;
+            }
+            .section-block {
+                background-color: #ffffff;
+                border: none;
+                box-shadow: none;
+                padding: 1rem 0;
+                margin-bottom: 1rem;
+                page-break-inside: avoid;
+            }
+            h2 {
+                color: #000000;
+                border-left: 3px solid #000000;
+            }
+            p, li {
+                color: #333333;
+            }
+            li::before {
+                color: #000000;
+            }
+            .highlight-box {
+                background: none;
+                border: 1px solid #000000;
+            }
+            .highlight-box p {
+                color: #000000;
+            }
+            footer {
+                background: none;
+                border-top: 1px solid #000000;
+                color: #555555;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="app-badge">PSL</div>
+            <h1 id="policy-title">Pile Stroke Log</h1>
+            <p class="subtitle">Privacy Policy</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quick Facts Panel -->
+        <section class="quick-facts" aria-label="Privacy Highlights">
+            <div class="fact-card">
+                <span class="fact-icon" role="img" aria-label="Shield">🛡️</span>
+                <h3 class="fact-title">100% Offline</h3>
+                <p class="fact-desc">Audio analysis is performed completely on-device.</p>
+            </div>
+            <div class="fact-card">
+                <span class="fact-icon" role="img" aria-label="Database">💾</span>
+                <h3 class="fact-title">No Data Collection</h3>
+                <p class="fact-desc">We do not collect, upload, or sell your data.</p>
+            </div>
+            <div class="fact-card">
+                <span class="fact-icon" role="img" aria-label="No tracking">🚫</span>
+                <h3 class="fact-title">Zero Analytics</h3>
+                <p class="fact-desc">No tracking SDKs, no advertisements, no cookies.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Policy -->
+        <article class="section-block">
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    This privacy policy governs your use of the software application <strong>Pile Stroke Log</strong> (referred to as the "App"), created by the developer. The App is a utility tool designed to measure the blow rate and stroke height of pile-driving hammers using real-time audio analysis.
+                </p>
+                <p>
+                    We believe in complete transparency and user privacy. Because Pile Stroke Log operates entirely locally on your mobile device, we do not collect, process, transmit, or store any personal data.
+                </p>
+            </section>
+
+            <section style="margin-top: 2rem;">
+                <h2>Permissions & Usage</h2>
+                <p>
+                    To function correctly, the App requires specific system permissions on your mobile device. Here is why they are needed and how they are used:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Microphone Access (RECORD_AUDIO):</strong> Used to stream audio input for real-time blow rate and stroke height analysis. 
+                        <em>We do not record, save, or transmit any audio files. All sound analysis happens entirely in-memory and is discarded immediately after processing.</em>
+                    </li>
+                    <li>
+                        <strong>Storage Access (WRITE_EXTERNAL_STORAGE):</strong> Used to allow you to save and export generated hammer stroke log reports as PDF or CSV files to your device's storage (e.g., Downloads folder).
+                    </li>
+                </ul>
+            </section>
+
+            <section style="margin-top: 2rem;">
+                <h2>No Collection or Transmission of Information</h2>
+                <p>
+                    When you use the App, we do not gather any information, personal or technical. Specifically:
+                </p>
+                <ul>
+                    <li>No registration, login, or accounts are required.</li>
+                    <li>No name, email address, or device identifier is collected.</li>
+                    <li>No location data (GPS or IP-based) is requested or tracked.</li>
+                    <li>No automated crash reporting or analytical SDKs are integrated.</li>
+                </ul>
+                <div class="highlight-box">
+                    <p><strong>Note on Sharing:</strong> If you choose to share your log reports (PDF or CSV) using the Share functionality within the App, this is initiated solely by your manual action and utilizes the standard Android system share sheet to send the file to your designated target (e.g., Email, Messaging apps).</p>
+                </div>
+            </section>
+
+            <section style="margin-top: 2rem;">
+                <h2>Children's Privacy</h2>
+                <p>
+                    Because the App does not collect any personal data or transmit any information, it does not knowingly collect or request information from children under the age of 13.
+                </p>
+            </section>
+
+            <section style="margin-top: 2rem;">
+                <h2>Changes</h2>
+                <p>
+                    This Privacy Policy may be updated from time to time. We will notify you of any changes by updating the "Effective Date" at the bottom of this page. You are advised to consult this Privacy Policy regularly for any changes.
+                </p>
+            </section>
+
+            <section style="margin-top: 2rem;">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have any questions regarding privacy while using the App, or have questions about our practices, please contact us.
+                </p>
+                <div class="actions-panel">
+                    <button class="btn btn-primary" id="btn-print" onclick="window.print()">Print Policy</button>
+                    <a class="btn btn-secondary" id="btn-email" href="mailto:support@example.com?subject=Pile%20Stroke%20Log%20Privacy%20Inquiry">Email Support</a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pile Stroke Log. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7;">Effective Date: June 4, 2026</p>
+    </footer>
+
+</body>
+</html>
