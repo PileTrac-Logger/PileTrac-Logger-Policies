@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="End User License Agreement for the PileTrac Logger mobile application.">
+    <title>PileTrac Logger - EULA</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Modern CSS Reset & Core Tokens */
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --accent-primary: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Header Section */
+        header {
+            position: relative;
+            padding: 5rem 1.5rem 3rem;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(120deg, #ffffff, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Container & Cards Layout */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 6rem;
+        }
+
+        /* Policy Section Content */
+        .section-block {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+            color: #ffffff;
+            border-left: 4px solid var(--accent-primary);
+            padding-left: 0.75rem;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.25rem;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        /* Action Buttons */
+        .actions-panel {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-muted);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background-color: #080c14;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 12pt;
+            }
+            header {
+                background: none;
+                border-bottom: 2px solid #000000;
+                padding-top: 1rem;
+            }
+            h1 {
+                background: none;
+                -webkit-text-fill-color: initial;
+                color: #000000;
+            }
+            .subtitle {
+                color: #555555;
+            }
+            .quick-facts, .actions-panel {
+                display: none;
+            }
+            .section-block {
+                background-color: #ffffff;
+                border: none;
+                box-shadow: none;
+                padding: 1rem 0;
+                margin-bottom: 1rem;
+                page-break-inside: avoid;
+            }
+            h2 {
+                color: #000000;
+                border-left: 3px solid #000000;
+            }
+            p, li {
+                color: #333333;
+            }
+            li::before {
+                color: #000000;
+            }
+            footer {
+                background: none;
+                border-top: 1px solid #000000;
+                color: #555555;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="app-badge">PTL</div>
+            <h1 id="policy-title">PileTrac Logger</h1>
+            <p class="subtitle">End User License Agreement</p>
+        </div>
+    </header>
+
+    <main>
+        <article class="section-block">
+            <p><strong>END USER LICENSE AGREEMENT</strong></p>
+<p><strong>Last Updated:Â June 23, 2026</strong></p>
+<p><strong>IMPORTANT- READ CAREFULLY.</strong></p>
+<p>This End User License Agreement (â€œAgreementâ€) governs the use of the PileTrac Logger application (the â€œAppâ€) for Apple IOS or Google Android operating systems between you, the user, and the App Developer. This Agreement grants you a limited, non-exclusive, non-transferable license to download and use the App solely for its intended purpose. By downloading, installing, or using the App, you agree to be bound by the terms of this Agreement. If you do not agree, do not use the App.</p>
+<h2>1. Description of Service</h2>
+<p>The App is a tool designed to assist in monitoring pile driving operations by using audio analysis to estimate hammer impact timing and calculate the stroke height. The App allows the user to input project data, record blow counts, and generate PDF reports.</p>
+<h2>2. Disclaimer of Accuracy & "As-Is" Provision</h2>
+<h2>2.1 Technical Limitations:Â The App relies on microphone input and acoustic signatures to detect hammer impacts. By using the App, you acknowledge that the accuracy of the Appâ€™s assessments can be significantly affected by environmental noise, hardware quality, atmospheric conditions, and physical distance from the hammer.</h2>
+<h2>2.2 Not a Primary Measurement Tool:Â The data provided by the App is forÂ informational and supplemental purposes only. Any and all data produced by the App should not be used as the primary or sole method for determining pile capacity, stroke height, or structural integrity.</h2>
+<h2>2.3 Verification Required:Â All measurements generated by the App should be independently verified using physical markings (i.e., foot-interval marks) or manufacturer-certified instrumentation.</h2>
+<h2>3. High-Risk Activity & Safety Warning</h2>
+<h2>3.1 Dangerous Environments:Â Use of this App typically occurs on active construction sites. You are solely responsible for your own safety and the safety of those around you.</h2>
+<h2>3.2 Distraction Hazard:Â Do not allow the use of the App to distract you from following site safety protocols or monitoring heavy machinery.</h2>
+<h2>3.3 No Safety Guarantee:Â This App is not a safety device. It is not designed to detect equipment failure or hazardous structural conditions.</h2>
+<h2>4. Fees & Billing</h2>
+<h2>4.1 Subscription Requirement:Â The App offers 2 free trials before being on a paid, auto-renewing annual subscription basis. A valid subscription is required for full-access and use of the App. Payment is charged at the time of initial subscription purchase.</h2>
+<h2>4.2 App Store Billing:Â All payments are processed through Apple App Store or Google Play Store and are subject to their respective terms and conditions. These third-party platforms are responsible for the collection and storage of your information. We do not collect or store your payment information.</h2>
+<h2>4.3 Renewal and Cancellation: Subscriptions automatically renew on an annual basis unless canceled at least 24 hours before the end of the current subscription period. You may manage or cancel your subscription through your app store account settings. No refunds or credits are provided for partial subscription periods, except as required by the Apple App Store or Google Play Store.</h2>
+<h2>4.4 Refunds:Â Any requests for refunds are handled solely by the Apple App Store or Google Play Store in accordance with their refund policies.</h2>
+<h2>5. Privacy & Data Usage</h2>
+<h2>5.1 Microphone Access:Â The App requires access to your device's microphone to perform its core function (detecting hammer blows). Audio is processed locally in real-time and is not recorded, stored, or transmitted to any external server.</h2>
+<h2>5.2 Data Storage:Â Project data and logs are stored locally on your device. You are responsible for backing up your data and exports. The App does not have access to your project files.</h2>
+<h2>5.3 Permissions:Â The App may require "Wakelock" permissions to prevent the screen from dimming during recording sessions to ensure continuous monitoring.</h2>
+<h2>6. Limitation of Liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPERS AND AFFILIATES SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE APP, INCLUDING BUT NOT LIMITED TO:</p>
+<p>ERRORS IN CONSTRUCTION DATA.</p>
+<p>STRUCTURAL FAILURES OR PROJECT DELAYS.</p>
+<p>LOSS OF DATA OR FINANCIAL LOSS.</p>
+<p>PERSONAL INJURY OR PROPERTY DAMAGE RESULTING FROM SITE DISTRACTIONS OR RELIANCE ON APP DATA.</p>
+<h2>7. User Obligations</h2>
+<p>By using the App, you represent that:</p>
+<p>You are a professional or student in the engineering or construction field with the expertise to interpret the App's output.</p>
+<p>You will use the App in compliance with all local, state, and federal regulations regarding construction site monitoring.</p>
+<p>You will not attempt to reverse engineer, decompile, or bypass any logic within the App.</p>
+<h2>8. Termination</h2>
+<p>We reserve the right to suspend or terminate your access to the App at any time for violations of this Agreement or misuse that could result in harm, legal exposure, or improper reliance on App data.</p>
+<p>Upon termination, your right to use the App will immediately cease. Termination does not entitle you to any refund of purchase fees.</p>
+<h2>9. No Warranty</h2>
+<p>The App is provided "AS IS" and "AS AVAILABLE" without any warranties of any kind, whether express or implied, including but not limited to the implied warranties of merchantability or fitness for a particular purpose.</p>
+<h2>10. Intellectual Property</h2>
+<p>All code, algorithms, UI designs, and branding (including the name "PileTrac Logger") are the exclusive property of the App Developer. No right, title, or interest is transferred to the user beyond the limited right to use the App for its intended purpose.</p>
+<h2>11. Governing Law</h2>
+<p>This Agreement shall be governed by and construed in accordance with the laws of the State of Kansas, United States, without regard to its conflict-of-law principles and applies regardless of your country or place of residence.</p>
+<p>The exclusive jurisdiction and venue for any legal action arising out of or relating to this Agreement shall be in the courts located in Johnson County, Kansas, or the United States District Court for the District of Kansas, and the parties hereby consent to the personal jurisdiction of such courts.</p>
+<p>Nothing in this Agreement shall limit any mandatory consumer rights that cannot be waived under applicable law.</p>
+<h2>12. Severability</h2>
+<p>If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+<h2>13. Entire Agreement</h2>
+<p>This Agreement constitutes the entire agreement between you and the App Developer regarding the use of the App and supersedes any prior or contemporaneous understandings or representations, whether written or oral.</p>
+<h2>14. Changes to Terms</h2>
+<p>We reserve the right to modify this Agreement at any time. Continued use of the App following any changes constitutes acceptance of the new terms.</p>
+<h2>15. Contact Information</h2>
+<p>If you have questions regarding this Agreement or the App's functionality, please contact info@ftandc.com </p>
+
+            <div class="actions-panel">
+                <button class="btn btn-primary" id="btn-print" onclick="window.print()">Print Document</button>
+                <a class="btn btn-secondary" id="btn-email" href="mailto:info@ftandc.com?subject=PileTrac%20Logger%20Inquiry">Email Support</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PileTrac Logger. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7;">Effective Date: June 23, 2026</p>
+    </footer>
+
+</body>
+</html>
