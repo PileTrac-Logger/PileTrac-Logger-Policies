@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="End User License Agreement for the PileTrac Logger mobile application.">
+    <title>PileTrac Logger - EULA</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Modern CSS Reset & Core Tokens */
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --accent-primary: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Header Section */
+        header {
+            position: relative;
+            padding: 5rem 1.5rem 3rem;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(120deg, #ffffff, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Container & Cards Layout */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 6rem;
+        }
+
+        /* Policy Section Content */
+        .section-block {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+            color: #ffffff;
+            border-left: 4px solid var(--accent-primary);
+            padding-left: 0.75rem;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.25rem;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+            font-size: 1.05rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        /* Action Buttons */
+        .actions-panel {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-speed);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-muted);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background-color: #080c14;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 12pt;
+            }
+            header {
+                background: none;
+                border-bottom: 2px solid #000000;
+                padding-top: 1rem;
+            }
+            h1 {
+                background: none;
+                -webkit-text-fill-color: initial;
+                color: #000000;
+            }
+            .subtitle {
+                color: #555555;
+            }
+            .quick-facts, .actions-panel {
+                display: none;
+            }
+            .section-block {
+                background-color: #ffffff;
+                border: none;
+                box-shadow: none;
+                padding: 1rem 0;
+                margin-bottom: 1rem;
+                page-break-inside: avoid;
+            }
+            h2 {
+                color: #000000;
+                border-left: 3px solid #000000;
+            }
+            p, li {
+                color: #333333;
+            }
+            li::before {
+                color: #000000;
+            }
+            footer {
+                background: none;
+                border-top: 1px solid #000000;
+                color: #555555;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="app-badge">PTL</div>
+            <h1 id="policy-title">PileTrac Logger</h1>
+            <p class="subtitle">User Guide</p>
+        </div>
+    </header>
+
+    <main>
+        <article class="section-block">
+            <p><strong>USER GUIDE</strong></p>
+<p>Welcome to the PileTrac Logger User Guide. This Application is designed for pile driving professionals to accurately monitor, log, and export pile driving data using acoustic impact detection.</p>
+<h2>1. Getting Started: Setup Screen</h2>
+<p>Before you begin driving, you must define the parameters for your session. Be sure to select the appropriate unit settings (imperial or metric) located at the top right corner of the homepage. This ensures that the logs are accurately displayed.</p>
+<p>Project Details</p>
+<p>Project Name & Location: Enter the job site identifiers.</p>
+<p>Contractor & Inspector: Enter the name(s) of the construction company and the personnel responsible for the log.</p>
+<p>Substructure Element: Enter the bridge pier/intermediate bent, abutment/end bent, or foundation block identifier and number (e.g., Pier 2, Bent 4, or Abutment 1).</p>
+<p>Pile Number: The specific number of the pile being driven.</p>
+<p>Pile Length (ft/m): The total physical length of the pile.</p>
+<p>Reference Levels</p>
+<p>Ground Elevation (ft/m): The elevation of the ground at the pile location relative to your datum.</p>
+<p>Pile Penetration Depth (ft/m): Your starting depth. If the pile is already 10 feet or 3.05 metres in the ground, enter 10.0 or 3.05. The app will calculate the pile tip elevation automatically.</p>
+<p>Pile & Hammer Selection</p>
+<p>Pile Selection: Select the Material (Steel/Concrete), Type (H-Pile, Pipe, etc.), and Section Size.</p>
+<p>Note: The app automatically pulls the Cross-Section Area from its database based on your selection. Note the app only has section sizes for steel when the user is using metric.</p>
+<p>Hammer Selection: Select the hammer being used. The app uses the hammer's Max Rated Stroke to filter out false acoustic triggers and the Ram Weight for the bearing capacity calculation.</p>
+<h2>2. In the Field: The Log Screen</h2>
+<p>Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log. The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening. (Note: The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)</p>
+<p>Step 1: Recording Blows</p>
+<p>The app will prompt the user to unpause the microphone to begin listening for hammer blows.</p>
+<p>Tap the Microphone Icon (Bottom Left) to start listening (turns Red).</p>
+<p>As the hammer strikes, the app will automatically display:</p>
+<p>Current Blows: Total blows in the current foot.</p>
+<p>Last Stroke: The fall height of the ram for the most recent blow.</p>
+<p>Microphone Status: Listening or Paused </p>
+<p>If the hammer is stopped, the user can â€œpauseâ€ the microphone (turns Green) to prevent the app from listening and accidentally triggering blows if the threshold's exceeded.</p>
+<p>Step 3: Sensitivity Adjustment</p>
+<p>The app will automatically turn on the auto-sensitivity. However, if the user wants to, they can turn off the auto-sensitivity and manually adjust the microphone sensitivity.</p>
+<p>Manual Slider: Move the slider to the right (e.g., 25x or 30x) if the site is very noisy, or to the left if the hammer hits are very quiet (e.g. 4x or 6x). Default is based on the baseline background noise after microphone calibration.</p>
+<p>Auto-Sensitivity: Enable this to let the app automatically adjust its threshold based on the volume of the last 5 impacts. (Disables manual adjustment of the slider).</p>
+<p>Step 4: Foot-by-Foot/Metre-by-Metre Logging</p>
+<p>Each time the pile moves exactly 1 foot (or if using metric, 1 metre), tap Increment.</p>
+<p>The app will save the average stroke and total blow count for that interval onto the data table.</p>
+<p>If the hammer is stopped and the microphone is paused, the user can select a foot/metre interval which can expand/collapse and show the blow-by-blow data for that interval.</p>
+<p>The Current Elevation indicator at the top will display the pile tip elevation and will update automatically.</p>
+<h2>3. Finalizing & Exporting</h2>
+<p>When the pile reaches its final tip elevation:</p>
+<p>Tap Stop.</p>
+<p>Final Depth: Enter the exact final penetration depth (e.g., 65.4 ft or 19.9 m).</p>
+<p>If the pile needs to be driven further and the user wants to continue logging the data, they can cancel the final depth prompt to stay on the drive log. Note: Before the hammer starts driving, the user must press the microphone icon to allow the app to start listening again.</p>
+<p>Bearing Capacity: Select Yes if you wish to calculate the estimated capacity using the FHWA-Modified Gates Formula. Be sure to enter the values obtained from the end of initial drive. Note: If the user is using metric units, then the Bearing Capacity prompt will not be shown or calculated.</p>
+<p>Enter in the Calculated Stroke, H (ft)</p>
+<p>The app will use the stroke the user entered to calculate the actual hammer energy based on the hammer's weight.</p>
+<p>Enter in the Blows Per Inch, N and the app will calculate the estimated Nominal Resistance, Rn (kips).</p>
+<p>Export as PDF:</p>
+<p>Choose your Line Print Frequency ("x" blows).</p>
+<p>0: Only the summary per foot is listed (Summary Log)</p>
+<p>1: Every single blow is listed (Detailed Log)</p>
+<p>If there are hundreds of blows, the user can choose any number, and the log will print every "x" blows (e.g., 5 for every 5 blows, 12 for every 12 blows, etc.).</p>
+<p>The app will generate a PDF document containing the Project Details, Pile & Hammer Specs, and the type of Blow Log the user chooses (Summary or Detailed).</p>
+<p>Share: Use the standard phone sharing menu to email the PDF or to save it directly to your device. Note: If the user does not export and send/save the PDF, then the app will clear the session, and the data will be lost.</p>
+<h2>4. Best Practices for Accuracy</h2>
+<p>Placement: Keep the phone within 20 to 50 feet of the pile. Ensure a clear "line of sight" for the sound. Avoid placing the phone behind or near heavy machinery which might block the incoming noise from the hammer's impact or cause false triggers.</p>
+<p>Environmental Noise: While the app tries to mitigate wind/environmental noise with different audio processor parameters, high wind or nearby construction equipment could cause false triggers.</p>
+<p>Try to be a safe distance away from the hammer but close enough that the hammer impacts are the loudest nearby noise and avoid pointing the microphone towards strong winds if possible.</p>
+<p>Wait for Finish: Once the fuel to the hammer is shut off wait for the ram to settle and don't tap "Stop" until the hammer ram has completely stopped moving.</p>
+<p>Battery: The app keeps your screen awake and uses your microphone continuously while driving. For long driving sessions, keep the phone connected to a portable charger, if possible.</p>
+
+            <div class="actions-panel">
+                <button class="btn btn-primary" id="btn-print" onclick="window.print()">Print Document</button>
+                <a class="btn btn-secondary" id="btn-email" href="mailto:info@ftandc.com?subject=PileTrac%20Logger%20Inquiry">Email Support</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PileTrac Logger. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7;">Effective Date: June 23, 2026</p>
+    </footer>
+
+</body>
+</html>
