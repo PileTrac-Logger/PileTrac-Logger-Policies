@@ -332,8 +332,8 @@
 <p><strong>USER GUIDE</strong></p>
 
 <p>
-    Welcome to the <strong>PileTrac Logger</strong> User Guide. This application is designed
-    for pile driving professionals to accurately monitor, log, and export pile driving data
+    Welcome to the <strong>PileTrac Logger</strong> User Guide. This application is designed to help
+    pile driving professionals accurately monitor, log, and export pile driving data
     using acoustic impact detection.
 </p>
 
@@ -356,7 +356,7 @@
 
     <li>
         <strong>Contractor &amp; Inspector:</strong>
-        Enter the name(s) of the construction company and the personnel responsible
+        Enter the name(s) of the contractor and inspector responsible
         for the log.
     </li>
 
@@ -387,8 +387,8 @@
 
     <li>
         <strong>Pile Penetration Depth (ft/m):</strong>
-        Your starting depth. If the pile is already 10 feet (or approximately
-        3.05 metres) in the ground, enter <strong>10.0</strong> or
+        Your starting depth. If the pile has already been driven 10 feet (or approximately
+        3.05 metres), enter <strong>10.0</strong> or
         <strong>3.05</strong>. The app will calculate the pile tip elevation
         automatically.
     </li>
@@ -417,7 +417,7 @@
     <li>
         <strong>Hammer Selection:</strong>
         Select the hammer being used. The app uses the hammer's
-        <strong>Max Rated Stroke</strong> to filter out false acoustic
+        <strong>Maximum Rated Stroke</strong> to filter out false acoustic
         triggers and the <strong>Ram Weight</strong> for the bearing
         capacity calculation.
     </li>
@@ -428,8 +428,8 @@
 
 <p>
    Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log.
-   The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening.
-   <i>(Note: The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)</i>
+   The app will automatically perform a microphone calibration and once complete, the microphone will automatically pause.
+   <i>(Note: The user can perform another microphone calibration, if the initial calibration was not satisfactory, by pressing on the tune icon in the top right corner.)</i>
 </p>
 
 <h3><strong>Step 1: Recording Blows</strong></h3>
@@ -444,29 +444,29 @@
                 <li><strong>Microphone Status:</strong> Listening or Paused</li>
             </ul>
         </li>
-        <li>If the hammer is stopped, the user can <q>pause</q> the microphone (turns <strong>Green</strong>) to prevent the app from listening and accidentally triggering blows if the threshold's exceeded.</li>
+        <li>If the hammer is stopped, the user can <q>pause</q> the microphone (turns <strong>Green</strong>) to prevent the app from listening and accidentally detecting false blows if the threshold is exceeded.</li>
     </ol>
 
 <h3><strong>Step 2: Sensitivity Adjustment</strong></h3>
 <p>
-    The app will automatically turn on the auto-sensitivity. However, if the user wants to, they can turn off the auto-sensitivity and manually adjust the microphone sensitivity.
+    The app will automatically enable auto-sensitivity. However, if the user wants to, they can turn off the auto-sensitivity and manually adjust the microphone sensitivity.
 </p>
 
     <ul class="guide-list">
         <li><strong>Manual Slider:</strong> Move the slider to the right (e.g., 25x or 30x) if the site is very noisy, or to the left if the hammer hits are very quiet (e.g. 4x or 6x).
-            Default is based on the baseline background noise after microphone calibration.</li>
+            The default is based on the baseline background noise measured during microphone calibration.</li>
         <li><strong>Auto-Sensitivity:</strong> Enable this to let the app automatically adjust its threshold based on the volume of the last 5 impacts. (Disables manual adjustment of the slider).</li>
     </ul>
         
-<h3><strong>Step 4: Foot-by-Foot/Metre-by-Metre Logging</strong></h3>
+<h3><strong>Step 3: Foot-by-Foot/Metre-by-Metre Logging</strong></h3>
         
     <ol class="guide-list">
         <li>Each time the pile moves exactly <strong>1 foot</strong> (or if using metric, <strong>1 metre</strong>), tap <strong>Increment.</strong></li>
-        <li>The app will save the average stroke and total blow count for that interval onto the data table.</li>
+        <li>The app records the average stroke and total blow count for that interval in the data table.</li>
             <ul class="guide-sublist">
                 <li>If the hammer is stopped and the microphone is paused, the user can select a foot/metre interval which can expand/collapse and show the blow-by-blow data for that interval.</li>
             </ul>
-        <li>The Current Elevation indicator at the top will display the pile tip elevation and will update automatically.</li>
+        <li>The Current Elevation indicator at the top will display the pile tip elevation and updates automatically.</li>
     </ol>
 
 <h2><strong>3. Finalizing & Exporting</strong></h2>
@@ -477,18 +477,18 @@
         <li><strong>Tap Stop.</strong></li>
         <li><strong>Final Depth:</strong> Enter the exact final penetration depth (e.g., 65.4 ft or 19.9 m).
             <ul class="guide-sublist">
-                <li>If the pile needs to be driven further and the user wants to continue logging the data, they can cancel the final depth prompt to stay on the drive log. 
+                <li>If additional driving is required and the user wants to continue logging the data, they can cancel the final depth prompt to stay on the drive log. 
                     <i>Note: Before the hammer starts driving, the user must <strong>press the microphone icon</strong> to allow the app to start listening again.</i></li>
             </ul>
         </li>
-        <li><strong>Bearing Capacity:</strong> Select Yes if you wish to calculate the estimated capacity using the FHWA-Modified Gates Formula. Be sure to enter the values obtained from the end of initial drive.
+        <li><strong>Bearing Capacity:</strong> Select Yes if you wish to calculate the estimated capacity using the FHWA-Modified Gates Formula. Be sure to enter the values obtained from the End of Initial Drive (EOID).
             <i>Note: If the user is using metric units, then the Bearing Capacity prompt will not be shown or calculated.</i></li>
             <ul class="guide-sublist">
-                <li>Enter in the <strong>Calculated Stroke, H</strong> (ft)
+                <li>Enter the <strong>Calculated Stroke, H</strong> (ft)
                     <ul class="guide-deeplist">
-                        <li>The app will use the stroke the user entered to calculate the acutal hammer energy based on the hammer's weight.</li>
+                        <li>The app will use the stroke the user entered to calculate the actual hammer energy based on the hammer's weight.</li>
                     </ul>
-                <li>Enter in the <strong>Blows Per Inch, N</strong> and the app will calculate the estimated <strong>Nominal Resistance, Rn</strong> (kips).</li>
+                <li>Enter the <strong>Blows Per Inch, N</strong> and the app will calculate the estimated <strong>Nominal Resistance, Rn</strong> (kips).</li>
                 </li>
             </ul>
         <li><strong>Export as PDF:</strong></li>
@@ -502,24 +502,24 @@
                         </ul>
                     </li>
                 </ul>
-                <li>The app will generate a PDF document containing the Project Details, Pile & Hammer Specs, and the type of Blow Log the user chooses (<strong>Summary</strong> or <strong>Detailed</strong>).</li>
+                <li>The app will generate a PDF document containing the Project Details, Pile & Hammer Specs, and the selected Blow Log format the user chooses (<strong>Summary</strong> or <strong>Detailed</strong>).</li>
             </ul>
         <li><strong>Share:</strong> Use the standard phone sharing menu to email the PDF or to save it directly to your device. 
-            <i>Note: If the user does not export and send/save the PDF, then the app will <strong>clear the session, and the data will be lost.</strong></i></li>
+            <i>Note: If the user does not export and send/save the PDF, the <strong>session will be cleared, and the data will be lost.</strong></i></li>
     </ol>
 
 <h2><strong>4. Best Practices for Accuracy</strong></h2>
         
     <ul class="guide-sublist">
         <li><strong>Placement:</strong> Keep the phone within 20 to 50 feet of the pile. Ensure a clear <q>line of sight</q> for the sound.
-            Avoid placing the phone behind or near heavy machinery which might block the incoming noise from the hammer's impact or cause false triggers.</li>
-        <li><strong>Environmental Noise:</strong> While the app tries to mitigate wind/environmental noise with different audio processor parameters, high wind or nearby construction equipment could cause false triggers.
+            Avoid placing the phone behind heavy machinery or near other loud equipment which might block the incoming noise from the hammer's impact or cause false triggers.</li>
+        <li><strong>Environmental Noise:</strong> While the app tries to mitigate wind and environmental noise with different audio processor parameters, high wind or nearby construction equipment could cause false triggers.
             <ul class="guide-deeplist">
-                <li>Try to be a safe distance away from the hammer but close enough that the hammer impacts are the loudest nearby noise and avoid pointing the microphone towards strong winds if possible.</li>
+                <li>Maintain a safe distance from the hammer while remaining close enough that the hammer impacts are the loudest nearby sound. If possible, avoid pointing the microphone towards strong winds.</li>
             </ul>
         </li>
-        <li><strong>Wait for Finish:</strong> Once the fuel to the hammer is shut off wait for the ram to settle and don't tap <q><strong>Stop</strong></q> until the hammer ram has completely stopped moving.</li>
-        <li><strong>Battery:</strong>The app keeps your screen awake and uses your microphone continuously while driving. For long driving sessions, keep the phone connected to a portable charger, if possible.</li>
+        <li><strong>Wait for Finish:</strong> Once the fuel to the hammer is shut off, wait for the ram to settle. Do not tap <q><strong>Stop</strong></q> until the hammer ram has completely stopped moving.</li>
+        <li><strong>Battery:</strong> The app keeps your screen awake and uses your microphone continuously while driving. For long driving sessions, keep the phone connected to a portable charger if possible.</li>
 
             <div class="actions-panel">
                 <button class="btn btn-primary" id="btn-print" onclick="window.print()">Print Document</button>
