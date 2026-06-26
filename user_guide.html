@@ -116,7 +116,49 @@
         h2:first-child {
             margin-top: 0;
         }
+        h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+        }
 
+        .guide-list {
+        margin-left: 1.5rem;
+        margin-bottom: 1.75rem;
+        list-style: disc;
+        }
+
+        .guide-list > li {
+        margin-bottom: 0.85rem;
+        line-height: 1.7;
+        padding-left: 0;
+        position: static;
+        }
+
+        .guide-list > li::before {
+        content: none;
+        }
+
+        .guide-sublist {
+        margin-top: 0.6rem;
+        margin-left: 1.5rem;
+        list-style: circle;
+        }
+
+        .guide-sublist li {
+        margin-top: 0.4rem;
+        line-height: 1.6;
+        padding-left: 0;
+        position: static;
+        }
+
+        .guide-sublist li::before {
+        content: none;
+        }
+        
         p {
             margin-bottom: 1.25rem;
             color: var(--text-main);
@@ -263,23 +305,100 @@
 
     <main>
         <article class="section-block">
-            <p><strong>USER GUIDE</strong></p>
-<p>Welcome to the PileTrac Logger User Guide. This Application is designed for pile driving professionals to accurately monitor, log, and export pile driving data using acoustic impact detection.</p>
+<p><strong>USER GUIDE</strong></p>
+
+<p>
+    Welcome to the <strong>PileTrac Logger</strong> User Guide. This application is designed
+    for pile driving professionals to accurately monitor, log, and export pile driving data
+    using acoustic impact detection.
+</p>
+
 <h2>1. Getting Started: Setup Screen</h2>
-<p>Before you begin driving, you must define the parameters for your session. Be sure to select the appropriate unit settings (imperial or metric) located at the top right corner of the homepage. This ensures that the logs are accurately displayed.</p>
-<b>Project Details</b>
-<p style="margin-left: 30px;"><strong>Project Name &amp; Location:</strong> Enter the job site identifiers.</p>
-<p style="margin-left: 30px;"><strong>Contractor &amp; Inspector:</strong> Enter the name(s) of the construction company and the personnel responsible for the log.</p>
-<p style="margin-left: 30px;"><strong>Substructure Element:</strong> Enter the bridge pier/intermediate bent, abutment/end bent, or foundation block identifier and number (e.g., Pier 2, Bent 4, or Abutment 1).</p>
-<p style="margin-left: 30px;"><strong>Pile Number:</strong> The specific number of the pile being driven.</p>
-<p style="margin-left: 30px;"><strong>Pile Length (ft/m):</strong> The total physical length of the pile.</p>
-<p>Reference Levels</p>
-<p>Ground Elevation (ft/m): The elevation of the ground at the pile location relative to your datum.</p>
-    <p>Pile Penetration Depth (ft/m): Your starting depth. If the pile is already 10 feet or 3.05 metres in the ground, enter 10.0 or 3.05. The app will calculate the pile tip elevation automatically.</p>
-<b>Pile & Hammer Selection</b>
-    <p>Pile Selection: Select the Material (Steel/Concrete), Type (H-Pile, Pipe, etc.), and Section Size.</p>
-        <p>Note: The app automatically pulls the Cross-Section Area from its database based on your selection. Note the app only has section sizes for steel when the user is using metric.</p>
-    <p>Hammer Selection: Select the hammer being used. The app uses the hammer's Max Rated Stroke to filter out false acoustic triggers and the Ram Weight for the bearing capacity calculation.</p>
+
+<p>
+    Before you begin driving, you must define the parameters for your session. Be sure to
+    select the appropriate unit settings (<strong>imperial</strong> or
+    <strong>metric</strong>) located at the top right corner of the homepage.
+    This ensures that the logs are accurately displayed.
+</p>
+
+<h3>Project Details</h3>
+
+<ul class="guide-list">
+    <li>
+        <strong>Project Name &amp; Location:</strong>
+        Enter the job site identifiers.
+    </li>
+
+    <li>
+        <strong>Contractor &amp; Inspector:</strong>
+        Enter the name(s) of the construction company and the personnel responsible
+        for the log.
+    </li>
+
+    <li>
+        <strong>Substructure Element:</strong>
+        Enter the bridge pier/intermediate bent, abutment/end bent, or foundation
+        block identifier and number (e.g., Pier 2, Bent 4, or Abutment 1).
+    </li>
+
+    <li>
+        <strong>Pile Number:</strong>
+        The specific number of the pile being driven.
+    </li>
+
+    <li>
+        <strong>Pile Length (ft/m):</strong>
+        The total physical length of the pile.
+    </li>
+</ul>
+
+<h3>Reference Levels</h3>
+
+<ul class="guide-list">
+    <li>
+        <strong>Ground Elevation (ft/m):</strong>
+        The elevation of the ground at the pile location relative to your datum.
+    </li>
+
+    <li>
+        <strong>Pile Penetration Depth (ft/m):</strong>
+        Your starting depth. If the pile is already 10 feet (or approximately
+        3.05 metres) in the ground, enter <strong>10.0</strong> or
+        <strong>3.05</strong>. The app will calculate the pile tip elevation
+        automatically.
+    </li>
+</ul>
+
+<h3>Pile &amp; Hammer Selection</h3>
+
+<ul class="guide-list">
+
+    <li>
+        <strong>Pile Selection:</strong>
+        Select the <strong>Material</strong> (Steel/Concrete),
+        <strong>Type</strong> (H-Pile, Pipe, etc.), and
+        <strong>Section Size</strong>.
+
+        <ul class="guide-sublist">
+            <li>
+                <strong>Note:</strong> The app automatically pulls the
+                Cross-Section Area from its database based on your selection.
+                Section sizes are only available for steel piles when using
+                metric units.
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Hammer Selection:</strong>
+        Select the hammer being used. The app uses the hammer's
+        <strong>Max Rated Stroke</strong> to filter out false acoustic
+        triggers and the <strong>Ram Weight</strong> for the bearing
+        capacity calculation.
+    </li>
+
+</ul>
 <h2>2. In the Field: The Log Screen</h2>
 <p>Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log. The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening. (Note: The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)</p>
 <p>Step 1: Recording Blows</p>
