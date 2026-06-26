@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="End User License Agreement for the PileTrac Logger mobile application.">
-    <title>PileTrac Logger - EULA</title>
+    <meta name="description" content="User Guide for the PileTrac Logger mobile application.">
+    <title>PileTrac Logger - User Guide</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,46 +117,63 @@
             margin-top: 0;
         }
         h3 {
-        font-family: 'Outfit', sans-serif;
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-top: 2rem;
-        margin-bottom: 0.75rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
         }
 
         .guide-list {
-        margin-left: 1.5rem;
-        margin-bottom: 1.75rem;
-        list-style: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1.75rem;
+            list-style: disc;
         }
 
         .guide-list > li {
-        margin-bottom: 0.85rem;
-        line-height: 1.7;
-        padding-left: 0;
-        position: static;
+            margin-bottom: 0.85rem;
+            line-height: 1.7;
+            padding-left: 0;
+            position: static;
         }
 
         .guide-list > li::before {
-        content: none;
+            content: none;
         }
 
         .guide-sublist {
-        margin-top: 0.6rem;
-        margin-left: 1.5rem;
-        list-style: circle;
+            margin-top: 0.6rem;
+            margin-left: 1.5rem;
+            list-style: circle;
         }
 
         .guide-sublist li {
-        margin-top: 0.4rem;
-        line-height: 1.6;
-        padding-left: 0;
-        position: static;
+            margin-top: 0.4rem;
+            line-height: 1.6;
+            padding-left: 0;
+            position: static;
         }
 
         .guide-sublist li::before {
-        content: none;
+            content: none;
+        }
+
+        .guide-deeplist {
+            margin-top: 0.4rem;
+            margin-left: 1.5rem;
+            list-style: square;
+        }
+
+        .guide-deeplist li {
+            margin-top: 0.3rem;
+            line-height: 1.5;
+            padding-left: 0;
+            position: static
+        }
+
+        .guide-deeplist li::before {
+            content: none;
         }
         
         p {
@@ -399,47 +416,103 @@
     </li>
 
 </ul>
-<h2>2. In the Field: The Log Screen</h2>
-<p>Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log. The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening. (Note: The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)</p>
-<p>Step 1: Recording Blows</p>
-    <p>1.) The app will prompt the user to unpause the microphone to begin listening for hammer blows.</p>
-    <p>2.) Tap the Microphone Icon (Bottom Left) to start listening (turns Red).</p>
-    <p>3.) As the hammer strikes, the app will automatically display:</p>
-        <p>Current Blows: Total blows in the current foot.</p>
-        <p>Last Stroke: The fall height of the ram for the most recent blow.</p>
-        <p>Microphone Status: Listening or Paused </p>
-    <p>4.) If the hammer is stopped, the user can â€œpauseâ€ the microphone (turns Green) to prevent the app from listening and accidentally triggering blows if the threshold's exceeded.</p>
-<p>Step 3: Sensitivity Adjustment</p>
-<p>The app will automatically turn on the auto-sensitivity. However, if the user wants to, they can turn off the auto-sensitivity and manually adjust the microphone sensitivity.</p>
-<p>Manual Slider: Move the slider to the right (e.g., 25x or 30x) if the site is very noisy, or to the left if the hammer hits are very quiet (e.g. 4x or 6x). Default is based on the baseline background noise after microphone calibration.</p>
-<p>Auto-Sensitivity: Enable this to let the app automatically adjust its threshold based on the volume of the last 5 impacts. (Disables manual adjustment of the slider).</p>
-<p>Step 4: Foot-by-Foot/Metre-by-Metre Logging</p>
-<p>Each time the pile moves exactly 1 foot (or if using metric, 1 metre), tap Increment.</p>
-<p>The app will save the average stroke and total blow count for that interval onto the data table.</p>
-<p>If the hammer is stopped and the microphone is paused, the user can select a foot/metre interval which can expand/collapse and show the blow-by-blow data for that interval.</p>
-<p>The Current Elevation indicator at the top will display the pile tip elevation and will update automatically.</p>
-<h2>3. Finalizing & Exporting</h2>
+
+<h2><strong>2. In the Field: The Log Screen</strong></h2>
+
+<p>
+   Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log.
+   The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening.
+   <strong>(Note:</strong> The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)
+</p>
+
+<h3><strong>Step 1: Recording Blows</strong></h3>
+    
+    <ol class="guide-list">
+        <li>The app will prompt the user to unpause the microphone to begin listening for hammer blows.</li>
+        <li>Tap the <strong>Microphone Icon</strong> (Bottom Left) to start <q>listening</q> (turns <strong>Red</strong>).</li>
+        <li>As the hammer strikes, the app will automatically display:
+            <ul>
+                <li><strong>Current Blows:</strong> Total blows in the current foot.</li>
+                <li><strong>Last Stroke:</strong> The fall height of the ram for the most recent blow.</li>
+                <li><strong>Microphone Status:</strong> Listeing or Paused</li>
+            </ul>
+        </li>
+        <li>If the hammer is stopped, the user can <q>pause</q> the microphone (turns <strong>Green</strong>) to prevent the app from listening and accidentally triggering blows if the threshold's exceeded.</li>
+    </ol>
+
+<h3><strong>Step 2: Sensitivity Adjustment</strong></h3>
+<p>
+    The app will automatically turn on the auto-sensitivity. However, if the user wants to, they can turn off the auto-sensitivity and manually adjust the microphone sensitivity.
+</p>
+
+    <ul class="guide-list">
+        <li>Manual Slider: Move the slider to the right (e.g., 25x or 30x) if the site is very noisy, or to the left if the hammer hits are very quiet (e.g. 4x or 6x).
+            Default is based on the baseline background noise after microphone calibration.</li>
+        <li>Auto-Sensitivity: Enable this to let the app automatically adjust its threshold based on the volume of the last 5 impacts. (Disables manual adjustment of the slider).</li>
+    </ul>
+        
+<h3><strong>Step 4: Foot-by-Foot/Metre-by-Metre Logging</strong></h3>
+        
+    <ol class="guide-list">
+        <li>Each time the pile moves exactly <strong>1 foot</strong> (or if using metric, <strong>1 metre</strong>), tap <strong>Increment.</strong></li>
+        <li>The app will save the average stroke and total blow count for that interval onto the data table.</li>
+            <ul class="guide-sublist">
+                <li>If the hammer is stopped and the microphone is paused, the user can select a foot/metre interval which can expand/collapse and show the blow-by-blow data for that interval.</li>
+            </ul>
+        <li>The Current Elevation indicator at the top will display the pile tip elevation and will update automatically.</li>
+    </ol>
+
+<h2><strong>3. Finalizing & Exporting</strong></h2>
+        
 <p>When the pile reaches its final tip elevation:</p>
-<p>Tap Stop.</p>
-<p>Final Depth: Enter the exact final penetration depth (e.g., 65.4 ft or 19.9 m).</p>
-<p>If the pile needs to be driven further and the user wants to continue logging the data, they can cancel the final depth prompt to stay on the drive log. Note: Before the hammer starts driving, the user must press the microphone icon to allow the app to start listening again.</p>
-<p>Bearing Capacity: Select Yes if you wish to calculate the estimated capacity using the FHWA-Modified Gates Formula. Be sure to enter the values obtained from the end of initial drive. Note: If the user is using metric units, then the Bearing Capacity prompt will not be shown or calculated.</p>
-<p>Enter in the Calculated Stroke, H (ft)</p>
-<p>The app will use the stroke the user entered to calculate the actual hammer energy based on the hammer's weight.</p>
-<p>Enter in the Blows Per Inch, N and the app will calculate the estimated Nominal Resistance, Rn (kips).</p>
-<p>Export as PDF:</p>
-<p>Choose your Line Print Frequency ("x" blows).</p>
-<p>0: Only the summary per foot is listed (Summary Log)</p>
-<p>1: Every single blow is listed (Detailed Log)</p>
-<p>If there are hundreds of blows, the user can choose any number, and the log will print every "x" blows (e.g., 5 for every 5 blows, 12 for every 12 blows, etc.).</p>
-<p>The app will generate a PDF document containing the Project Details, Pile & Hammer Specs, and the type of Blow Log the user chooses (Summary or Detailed).</p>
-<p>Share: Use the standard phone sharing menu to email the PDF or to save it directly to your device. Note: If the user does not export and send/save the PDF, then the app will clear the session, and the data will be lost.</p>
-<h2>4. Best Practices for Accuracy</h2>
-<p>Placement: Keep the phone within 20 to 50 feet of the pile. Ensure a clear "line of sight" for the sound. Avoid placing the phone behind or near heavy machinery which might block the incoming noise from the hammer's impact or cause false triggers.</p>
-<p>Environmental Noise: While the app tries to mitigate wind/environmental noise with different audio processor parameters, high wind or nearby construction equipment could cause false triggers.</p>
-<p>Try to be a safe distance away from the hammer but close enough that the hammer impacts are the loudest nearby noise and avoid pointing the microphone towards strong winds if possible.</p>
-<p>Wait for Finish: Once the fuel to the hammer is shut off wait for the ram to settle and don't tap "Stop" until the hammer ram has completely stopped moving.</p>
-<p>Battery: The app keeps your screen awake and uses your microphone continuously while driving. For long driving sessions, keep the phone connected to a portable charger, if possible.</p>
+    
+    <ol class="guide-list">
+        <li><strong>Tap Stop.</strong></li>
+        <li><strong>Final Depth:</strong> Enter the exact final penetration depth (e.g., 65.4 ft or 19.9 m).
+            <ul class="guide-sublist">
+                <li>If the pile needs to be driven further and the user wants to continue logging the data, they can cancel the final depth prompt to stay on the drive log. 
+                    <i>Note: Before the hammer starts driving, the user must <strong>press the microphone icon</strong> to allow the app to start listening again.</i></li>
+            </ul>
+        </li>
+        <li><strong>Bearing Capacity:</strong> Select Yes if you wish to calculate the estimated capacity using the FHWA-Modified Gates Formula. Be sure to enter the values obtained from the end of initial drive.
+            <i>Note: If the user is using metric units, then the Bearing Capacity prompt will not be shown or calculated.</i></li>
+            <ul class="guide-sublist">
+                <li>Enter in the <strong>Calculated Stroke, H</strong> (ft)
+                    <ul class="guide-deeplist">
+                        <li>The app will use the stroke the user entered to calculate the acutal hammer energy based on the hammer's weight.</li>
+                    </ul>
+                <li>Enter in the <strong>Blows Per Inch, N</strong> and the app will calculate the estimated <strong>Nominal Resistance, Rn</strong> (kips).</li>
+                </li>
+            </ul>
+        <li><strong>Export as PDF:</strong></li>
+            <ul class="guide-sublist">
+                <li>Choose your <strong>Line Print Frequency</strong> (<q>x</q> blows).</li>
+                <ul class="guide-deeplist">
+                    <li>0: Only the summary per foot is listed (<strong>Summary Log</strong>)</li>
+                    <li>1: Every single blow is listed (<strong>Detailed Log</strong>)
+                        <ul>
+                            <li>If there are hundreds of blows, the user can choose any number, and the log will print every <q>x</q> blows (e.g., 5 for every 5 blows, 12 for every 12 blows, etc.).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <li>The app will generate a PDF document containing the Project Details, Pile & Hammer Specs, and the type of Blow Log the user chooses (<strong>Summary</strong> or <strong>Detailed</strong>).</li>
+            </ul>
+        <li><strong>Share:</strong> Use the standard phone sharing menu to email the PDF or to save it directly to your device. 
+            <i>Note: If the user does not export and send/save the PDF, then the app will <strong>clear the session, and the data will be lost.</strong></i></li>
+    </ol>
+
+<h2><strong>4. Best Practices for Accuracy</strong></h2>
+        
+    <ul class="guide-sublist">
+        <li><strong>Placement:</strong> Keep the phone within 20 to 50 feet of the pile. Ensure a clear <q>line of sight</q> for the sound.
+            Avoid placing the phone behind or near heavy machinery which might block the incoming noise from the hammer's impact or cause false triggers.</li>
+        <li><strong>Environmental Noise:</strong> While the app tries to mitigate wind/environmental noise with different audio processor parameters, high wind or nearby construction equipment could cause false triggers.
+            <ul class="guide-deeplist">
+                <li>Try to be a safe distance away from the hammer but close enough that the hammer impacts are the loudest nearby noise and avoid pointing the microphone towards strong winds if possible.</li>
+            </ul>
+        </li>
+        <li><strong>Wait for Finish:</strong> Once the fuel to the hammer is shut off wait for the ram to settle and don't tap <q><strong>Stop</strong></q> until the hammer ram has completely stopped moving.</li>
+        <li><strong>Battery:</strong>The app keeps your screen awake and uses your microphone continuously while driving. For long driving sessions, keep the phone connected to a portable charger, if possible.</li>
 
             <div class="actions-panel">
                 <button class="btn btn-primary" id="btn-print" onclick="window.print()">Print Document</button>
