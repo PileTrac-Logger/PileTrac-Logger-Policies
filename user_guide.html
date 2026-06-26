@@ -80,6 +80,7 @@
         }
 
         .subtitle {
+            text-align: center;
             font-size: 1.1rem;
             color: var(--text-muted);
             font-weight: 500;
@@ -125,10 +126,16 @@
             margin-bottom: 0.75rem;
         }
 
-        .guide-list {
+        ul.guide-list {
             margin-left: 1.5rem;
             margin-bottom: 1.75rem;
             list-style: disc;
+        }
+
+        ol.guide-list {
+            margin-left: 1.5rem;
+            margin-bottom: 1.75rem;
+            list-style: decimal;
         }
 
         .guide-list > li {
@@ -399,10 +406,10 @@
 
         <ul class="guide-sublist">
             <li>
-                <strong>Note:</strong> The app automatically pulls the
+                <i>Note: The app automatically pulls the
                 Cross-Section Area from its database based on your selection.
                 Section sizes are only available for steel piles when using
-                metric units.
+                metric units.</i>
             </li>
         </ul>
     </li>
@@ -422,7 +429,7 @@
 <p>
    Once you press Start, the app will pull the project name, substructure element, pile number, and ground elevation and open the drive log.
    The app will automatically perform a microphone calibration and once complete the app will pause the microphone from listening.
-   <strong>(Note:</strong> The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)
+   <i>(Note: The user can perform another microphone calibration if the first wasn't satisfactory by pressing on the tune icon in the top right corner.)</i>
 </p>
 
 <h3><strong>Step 1: Recording Blows</strong></h3>
@@ -434,7 +441,7 @@
             <ul>
                 <li><strong>Current Blows:</strong> Total blows in the current foot.</li>
                 <li><strong>Last Stroke:</strong> The fall height of the ram for the most recent blow.</li>
-                <li><strong>Microphone Status:</strong> Listeing or Paused</li>
+                <li><strong>Microphone Status:</strong> Listening or Paused</li>
             </ul>
         </li>
         <li>If the hammer is stopped, the user can <q>pause</q> the microphone (turns <strong>Green</strong>) to prevent the app from listening and accidentally triggering blows if the threshold's exceeded.</li>
