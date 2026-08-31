@@ -310,8 +310,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 PileTrac Logger. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> PileTrac Logger. All rights reserved.</p>
     </footer>
 
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
 </body>
 </html>
